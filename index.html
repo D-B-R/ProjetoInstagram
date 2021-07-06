@@ -91,3 +91,33 @@ let median = funcition (){
     }
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import cv2 as cv
+
+original = cv.imread('ComputacaoGrafica/images/image.png')
+mean = cv.blur(original,(5,5))
+median = cv.medianBlur(original,5)
+cv.imshow("Original",original) 
+cv.imshow("Mean",mean)
+cv.imshow("Median",median)
+
+cv.waitKey(0) 
+cv.destroyAllWindows()
+
